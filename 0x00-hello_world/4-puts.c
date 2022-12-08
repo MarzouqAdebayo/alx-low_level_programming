@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 /**
 *main - Entry point
 *
@@ -7,6 +6,6 @@
 */
 int main(void)
 {
-puts("Programming is like building a mutilingual puzzle");
+puts("\"Programming is like building a mutilingual puzzle");
 return (0);
 }
