@@ -8,12 +8,12 @@ int main(void)
 {
 	int count = 97, count2 = 65;
 
-	while (count < count + 26)
+	while (count < 97 + 26)
 	{
 		putchar(count);
 		count++;
-	}
-	while (count2 < count2 + 26)
+	};
+	while (count2 < 65 + 26)
 	{
 		putchar(count2);
 		count2++;
