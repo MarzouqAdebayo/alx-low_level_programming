@@ -24,13 +24,15 @@ int main(void)
 					putchar(k);
 					putchar(l);
 					if (i == 57 && j == 56)
-						break;
+					{
+						putchar('\n');
+						return (0);
+					}
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
