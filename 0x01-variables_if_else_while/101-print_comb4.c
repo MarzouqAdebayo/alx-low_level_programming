@@ -16,7 +16,7 @@ int main(void)
 			{
 				if (n1 == n2 || n2 == n3)
 					continue;
-				else if (n3 < n2 || n2 < n3)
+				else if (n3 < n2 || n2 < n1)
 					continue;
 				putchar(n1);
 				putchar(n2);
