@@ -16,23 +16,21 @@ int main(void)
 			{
 				for (l = 48; l < 58; l++)
 				{
-					if (k < i || (k == i && l == j) || (k == l && k < j))
+					if (k < i || l < j || (k == i && l == j) || (k == l && k < j))
 						continue;
 					putchar(i);
 					putchar(j);
 					putchar(' ');
 					putchar(k);
 					putchar(l);
-					if (i == 57 && j == 56)
-					{
-						putchar('\n');
-						return (0);
-					}
+					if (i == 57 && j == 56 && k == 57 && l == 57)
+						continue;
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
+	putchar(' ');
 	return (0);
 }
