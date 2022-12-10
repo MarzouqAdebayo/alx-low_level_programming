@@ -19,7 +19,7 @@ int main(void)
 			}
 			putchar(48 + n1);
 			putchar(48 + n2);
-			if (n1 != 9 || n2 != 9)
+			if (n1 != 8 || n2 != 9)
 			{
 				putchar(44);
 				putchar(32);
