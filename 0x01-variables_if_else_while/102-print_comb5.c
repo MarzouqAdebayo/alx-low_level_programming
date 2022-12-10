@@ -14,8 +14,13 @@ int main(void)
 		{
 			for (k = 48; k < 58; k++)
 			{
-				for (l = 48; l < 58; l++){
-					if (k < i || l < j || (k == i && l == j))
+				for (l = 48; l < 58; l++)
+				{
+					if (k < i)
+						continue;
+					else if (k == i && l == j)
+						continue;
+					else if ((k == i && l < j))
 						continue;
 					putchar(i);
 					putchar(j);
