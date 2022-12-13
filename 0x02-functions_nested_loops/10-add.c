@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * add - check the code
  * @a: Parameter a
  * @b: Parameter b
  *
