@@ -1,11 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - check the code
+ * print_alphabet - Contains full body of the function
  *
- * Return: Always 0.
+ * Description: Print all alphabets in lowercase
+ * Return: void, has no value
  */
-int main(void)
+void print_alphabet(void)
 {
-	printf("_putchar\n");
-	return (0);
+	int i;
+
+	for (i = 97; i < 97 + 26; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
 }
