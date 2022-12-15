@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _isdigit - Body of the function
  * @n: digit decimal value to be checked

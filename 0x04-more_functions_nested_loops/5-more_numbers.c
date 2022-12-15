@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * more_numbers - Body of the function
  *

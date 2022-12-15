@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_square - Body of the function
  * @n: argument to determine how big the square should be

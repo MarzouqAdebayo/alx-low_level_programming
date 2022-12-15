@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * mul - Body of the function
  * @a: first argument

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_diagonal - Body of the function
  * @n: argument to determine how long the diagonal should be
