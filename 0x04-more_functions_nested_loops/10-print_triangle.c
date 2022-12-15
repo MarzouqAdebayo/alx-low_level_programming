@@ -10,17 +10,14 @@ void print_triangle(int n)
 {
 	int line, i, j;
 
+	if (n <= 0)
+		_putchar('\n');
 	for (line = 0; line < n; line++)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-			break;
-		}
 		for (i = 0; i < n - line; i++)
 			_putchar(' ');
 		for (j = 0; j < line + 1; j++)
-			_putchar('#')
+			_putchar('#');
 		_putchar('\n');
 	}
 }
