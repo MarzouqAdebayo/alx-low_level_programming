@@ -18,7 +18,7 @@ void more_numbers(void)
 			for (j = 48; j < 58; j++)
 				if (i == 49 && j > 52)
 					break;
-				_putchar(j)
+				_putchar(j);
 		}
 		_putchar('\n');
 	}
