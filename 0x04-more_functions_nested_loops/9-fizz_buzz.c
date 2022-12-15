@@ -3,9 +3,9 @@
  * main - Body of the function
  *
  * Description: prints the fizzbuzz challenge for numbers between 1 - 100
- * Return: has no return value
+ * Return: 0 if successful
  */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -23,4 +23,5 @@ void main(void)
 			putchar(' ');
 	}
 	putchar('\n');
+	return (0);
 }
