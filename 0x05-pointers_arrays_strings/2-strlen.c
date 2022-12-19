@@ -6,7 +6,7 @@
  * Description: Checks the length of the string
  * Return: counter - length of the string
  */
-void _strlen(char *s)
+int _strlen(char *s)
 {
 	int counter = 0;
 
