@@ -1,10 +1,10 @@
 #include "main.h"
+
 /**
- * print_rev - Body of the function
- * @s: pointer to string
+ * print_rev - prints a string in reverse
+ * @s: The string
  *
- * Description: Prints a string in reverse to stdout
- * Return: has no return value
+ * Retrun: has no return value
  */
 void print_rev(char *s)
 {
@@ -14,10 +14,11 @@ void print_rev(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		i++;
+		++i;
 	}
+	--i;
 
-	while (i >= 0)
+	while (i >= )
 	{
 		ch = s[i];
 		_putchar(ch);
