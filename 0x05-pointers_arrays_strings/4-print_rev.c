@@ -8,21 +8,20 @@
  */
 void print_rev(char *str)
 {
-	int counter;
+	int i;
 	char ch;
 
 	i = 0;
-	while (*str != '\0')
+	while (str[i] != '\0')
 	{
-		str++;
-		counter++;
+		i++;
 	}
 
-	while (counter >= 0)
+	while (i >= 0)
 	{
 		ch = s[i];
 		_putchar(ch);
-		--counter;
+		--i;
 	}
 	_putchar('\n');
 }
