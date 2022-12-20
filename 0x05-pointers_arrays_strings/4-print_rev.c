@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_rev - Body of the function
+ * print_rev - Body of the function
  * @str: pointer to string
  *
  * Description: Prints a string in reverse to stdout
@@ -9,18 +9,20 @@
 void print_rev(char *str)
 {
 	int counter;
+	char ch;
 
+	i = 0;
 	while (*str != '\0')
 	{
 		str++;
 		counter++;
 	}
 
-	while (counter > 0)
+	while (counter >= 0)
 	{
-		str--;
-		_putchar(*str);
-		counter--;
+		ch = s[i];
+		_putchar(ch);
+		--counter;
 	}
 	_putchar('\n');
 }
