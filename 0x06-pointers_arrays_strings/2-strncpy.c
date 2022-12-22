@@ -9,7 +9,7 @@
  * Return: returns poiner to @dest
  */
 
-char *_strncpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i, len = 0;
 	char *cutpoint = &dest[n];
