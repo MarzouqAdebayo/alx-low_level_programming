@@ -5,7 +5,7 @@
  * @s: pointer to the string
  * @accept: pointer to string to be checked
  *
- * Return: an integer of the string length
+ * Return: number of bytes of s in accept
  */
 
 unsigned int _strspn(char *s, char *accept)
