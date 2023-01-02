@@ -7,7 +7,7 @@
  * Return: no return value
  */
 
-char print_chessboard(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	unsigned int i, j;
 
