@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * *_memset - Funtion to replace array values up to n bytes with b
  * @s: pointer to the array

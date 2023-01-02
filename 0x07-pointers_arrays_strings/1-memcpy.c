@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * *_memcpy - Funtion to replace array values up to n bytes with b
  * @dest: pointer to the array
