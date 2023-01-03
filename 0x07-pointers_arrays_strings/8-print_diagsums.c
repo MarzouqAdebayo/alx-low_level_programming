@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_diagsums = prints the sum of the two diagonals of a sqr mat
- * @a; Sqaure matrix
+ * print_diagsums - prints the sum of the two diagonals of a sqr mat
+ * @a: Square matrix
  * @size: length of square
  *
  * Return: void
