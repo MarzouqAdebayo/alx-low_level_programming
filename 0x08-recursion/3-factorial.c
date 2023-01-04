@@ -7,7 +7,7 @@
  * Return: int, returns the factorial
  */
 
-void factorial(char *s)
+int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
