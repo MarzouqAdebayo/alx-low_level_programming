@@ -18,7 +18,7 @@ int multiply(int i, int num)
 }
 
 /**
- * _sqrt_recursion(int n)
+ * _sqrt_recursion - Checks for the sqrt of a number
  * @n: number whose sqrt is to be found
  *
  * Return: sqrt of n or 0

@@ -18,7 +18,7 @@ int divide(int i, int num)
 }
 
 /**
- * is_prime_number(int n)
+ * is_prime_number - Checks if a number is prime or not
  * @n: number to be checked if prime or not
  *
  * Return: int, 1 or 0
