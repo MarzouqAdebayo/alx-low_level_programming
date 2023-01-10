@@ -9,7 +9,6 @@
  * Return: Pointer to the new string
  */
 
-B
 char *_strdup(char *str)
 {
 	char *str_cpy;
