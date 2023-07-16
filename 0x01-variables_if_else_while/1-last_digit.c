@@ -4,6 +4,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - Entry point Checks for the last digit
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
@@ -13,11 +17,11 @@ int main(void)
 	/* your code goes there */
 	printf("Last digit of %d is %d ", n, n % 10);
 	if (n % 10 > 5)
-		puts("and is greater than 5");
+		printf("and is greater than 5");
 	else if (n % 10 == 0)
-		puts("and is 0");
+		printf("and is 0");
 	else
-		puts("and is less than 6 and not 0");
-	puts("\n");
+		printf("and is less than 6 and not 0");
+	printf("\n");
 	return (0);
 }
