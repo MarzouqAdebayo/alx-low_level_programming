@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	int count = 48;
+	int count = 48, charcount = 0;
 
-	while (count < 58)
+	while (charcount < 16)
 	{
-		putchar(count);
-		if (count != 57)
+		if (count == 58)
 		{
-			putchar(44);
-			putchar(32);
-		};
+			count = 97;
+		}
+		putchar(count);
 		count++;
+		charcount++;
 	}
 	putchar(10);
 	return (0);
