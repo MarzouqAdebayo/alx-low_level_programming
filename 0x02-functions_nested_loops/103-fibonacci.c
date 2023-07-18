@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	unsigned long i = 0, j = 1, k, sum;
+	unsigned long i = 0, j = 1, k, sum = 0;
 
-	while (k < 4000000)
+	while (j < 4000000)
 	{
 		k = i + j;
 		if (k % 2 == 0)
