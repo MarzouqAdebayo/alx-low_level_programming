@@ -10,11 +10,11 @@
 int main(void)
 {
 	int n = 0;
-	long long int i = 0, j = 1, k;
+	unsigned long i = 0, j = 1, k;
 
 	while (n < 50)
 	{
-		printf("%lld", (i + j));
+		printf("%lu", (i + j));
 		if (n < 49)
 			printf(", ");
 		k = i + j;
