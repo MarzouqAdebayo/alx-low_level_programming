@@ -12,7 +12,7 @@ int main(void)
 	{
 		while (b < 10)
 		{
-			if (b ==a || b < a)
+			if (b == a || b < a)
 			{
 				b++;
 				continue;
