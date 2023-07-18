@@ -15,7 +15,7 @@ int main(void)
 	{
 		k = i + j;
 		if (k % 2 == 0)
-			sum += k
+			sum += k;
 		i = j;
 		j = k;
 	}
