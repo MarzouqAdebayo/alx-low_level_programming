@@ -22,5 +22,6 @@ int main(void)
 		j = k;
 		n++;
 	}
+	printf("\n");
 	return (0);
 }
