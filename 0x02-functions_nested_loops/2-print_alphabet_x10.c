@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry Point
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int i = 0, count = 97;
 
@@ -12,12 +12,11 @@ int main(void)
 	{
 		while (count < 97 + 26)
 		{
-			putchar(count);
+			_putchar(count);
 			count++;
 		}
-		putchar(10);
+		_putchar(10);
 		count = 97;
 	}
-	return (0);
 }
 
