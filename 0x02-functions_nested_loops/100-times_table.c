@@ -1,8 +1,11 @@
 #include "main.h"
+
+void dummy(void);
 /**
- * times_table - Contains full body of the function
+ * print_times_table - Contains full body of the function
+ * @n: number of times to print
  *
- * Description: Print the times table from 0-9
+ * Description: Print the times table from 0-n
  * Return: void, has no return value
  */
 void print_times_table(int n)
@@ -49,4 +52,12 @@ void print_times_table(int n)
 		}
 		_putchar('\n');
 	}
+}
+
+/**
+ * dummy - dummy
+ * Return: void
+ */
+void dummy(void)
+{
 }
