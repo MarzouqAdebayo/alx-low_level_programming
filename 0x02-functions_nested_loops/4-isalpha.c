@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _isalpha - Contains full body of the function
  * @c: The characer to be checked
