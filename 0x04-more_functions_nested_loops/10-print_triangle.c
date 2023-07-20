@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.h"
 /**
  * print_triangle - Body of the function
  * @n: argument to determine how big the square should be
