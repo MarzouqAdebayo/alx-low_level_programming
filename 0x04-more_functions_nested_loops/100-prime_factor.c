@@ -7,9 +7,10 @@
  * Return: int - Largest prime factor of a number
 */
 
-void print_largest_prime_factor(unsigned long long n)
+void print_largest_prime_factor(long long int n)
 {
 	int i = 2;
+
 	while (n > 1)
 	{
 		if (n % i == 0)
@@ -17,5 +18,5 @@ void print_largest_prime_factor(unsigned long long n)
 		else
 			i += 1;
 	}
-	printf("%lu", i);
+	printf("%llu", i);
 }
