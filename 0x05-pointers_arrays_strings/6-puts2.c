@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _puts - Body of the function
+ * puts2 - Body of the function
  * @str: pointer to string
  *
  * Description: Prints a string to stdout
  * Return: has no return value
  */
 
-void _puts(char *str)
+void puts2(char *str)
 {
 	int i;
 
