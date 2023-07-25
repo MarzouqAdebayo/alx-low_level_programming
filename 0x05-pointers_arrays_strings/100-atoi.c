@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-	int i, result = 0, sign = 1;
+	int i = 0, result = 0, sign = 1;
 
 	while (*(s + i) < '0' || *(s + i) > '9')
 	{
@@ -25,8 +25,6 @@ int _atoi(char *s)
 		result = (result * 10) + (s[i] - 48);
 		i++;
 	}
-
-	i = 0;
 
 	return (result * sign);
 }
