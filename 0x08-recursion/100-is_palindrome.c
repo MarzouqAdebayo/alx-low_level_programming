@@ -14,7 +14,7 @@ int checker(char *s, int l, int r)
 	if (l >= r)
 		return (1);
 	if (s[l] == s[r])
-		checker(s, l + 1, r - 1);
+		return (checker(s, l + 1, r - 1));
 	else
 		return (0);
 }
