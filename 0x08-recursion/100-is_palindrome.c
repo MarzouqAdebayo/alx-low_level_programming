@@ -3,17 +3,16 @@
 /**
  * _strlen - checks for the length of the string s
  * @s: pointer to the string s
+ * @i: integer counter
  *
  * Return: int i, length of the string
 */
 
-int _strlen(char *s)
+int _strlen(char *s, int i)
 {
-	int i;
-
-	for (i = 0; s[i]; i++)
-		;
-	return (i);
+	if (s[i] == '\0')
+		return (i);
+	return (_strlen(s, (i + 1)));
 }
 
 /**
