@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * _strlen - checks for the length of the string s
+ * @s: pointer to the string s
+ *
+ * Return: int i, length of the string
+*/
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
+}
+
+/**
  * checker - checks recursively
  * @s: pointer to the string
  * @l: the index of the first letter
@@ -30,7 +46,6 @@ int is_palindrome(char *s)
 {
 	int len;
 
-	for (len = 0; s[len]; len++)
-		;
+	len = _strlen(s);
 	return (checker(s, 0, len - 1));
 }
