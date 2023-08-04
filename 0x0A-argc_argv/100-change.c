@@ -42,7 +42,7 @@ int change(int remainder, int i, int qty)
 
 int main(int argc, char *argv[])
 {
-	int money = atoi(argv[1]);
+	int j, money = atoi(argv[1]);
 	int chg = 0;
 
 	if (argc != 2)
@@ -52,11 +52,21 @@ int main(int argc, char *argv[])
 	}
 
 	if (money < 1)
-		puts("0");
-	else
 	{
-		chg = change(money, 0, chg);
-		printf("%d\n", chg);
+		puts("0");
+		return (0);
 	}
+
+	for (j = 0; argv[1][j]; j++)
+	{
+		if (argv[1][j] >= '0' && argv[1][j] <= '9')
+			continue;
+		puts("Error");
+		return (1);
+	}
+
+	chg = change(money, 0, chg);
+	printf("%d\n", chg);
 	return (0);
 }
+
