@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	_putchar(0);
+	_putchar(48 + argc);
 	return (0);
 }
 
