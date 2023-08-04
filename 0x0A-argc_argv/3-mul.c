@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		return printf("Error\n");
+		printf("Error\n");
 		return (1);
 	}
 	while (i < argc)
