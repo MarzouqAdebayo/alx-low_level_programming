@@ -54,8 +54,9 @@ int main(int argc, char *argv[])
 	if (money < 1)
 		puts("0");
 	else
+	{
 		chg = change(money, 0, chg);
-
-	printf("%d\n", chg);
+		printf("%d\n", chg);
+	}
 	return (0);
 }
