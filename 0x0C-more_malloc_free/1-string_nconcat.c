@@ -4,7 +4,7 @@
 
 /**
  * string_nconcat - Concatenates two strings
- * @@s1: String one
+ * @s1: String one
  * @s2: String two
  * @n: number of bytes of s2 to concat
  *
@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	ptr = malloc(sizeof(*ptr) * (i + j + 1));
 
-	if (!ptr)
+	if (ptr == NULL)
 		return (0);
 
 	if (s1 != NULL)
@@ -51,7 +51,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k = 0;
 	if (s2 != NULL)
 	{
-		for (l = 0; l < n; l++, k++)
+		for (l = 0; l < j; l++, k++)
 		{
 			ptr[k] = s2[l];
 		}
