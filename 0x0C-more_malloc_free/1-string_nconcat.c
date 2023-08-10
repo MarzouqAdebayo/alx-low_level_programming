@@ -1,4 +1,5 @@
-#include "main.h"
+include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -9,37 +10,51 @@
  *
  * Return: pointer to the new string
  *
-*/
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
 	unsigned int i, j, k, l;
 
-	i = 0;
-	j = 0;
+	if (s1 == NULL)
+		i = 0;
+	else
+	{
+		for (i = 0; s1[i]; i++)
+			;
+	}
 
-	for (; s1[i]; i++)
-		;
-
-	for (; s2[j]; j++)
-		;
+	if (s2 == NULL)
+		j = 0;
+	else
+	{
+		for (j = 0; s2[j]; j++)
+			;
+	}
 
 	if (n < j)
 		j = n;
 
-	ptr = malloc(sizeof(* ptr) * (i + j + 1));
+	ptr = malloc(sizeof(*ptr) * (i + j + 1));
 
 	if (!ptr)
 		return (0);
 
-	for (k = 0; s1[k]; k++)
+	if (s1 != NULL)
 	{
-		ptr[k] = s1[k];
-	}
-	for (l = 0; l < n; l++, k++)
+		for (k = 0; k < i; k++)
+		{
+			ptr[k] = s1[k];
+		}
+	} else
+		k = 0;
+	if (s2 != NULL)
 	{
-		ptr[k] = s2[l];
+		for (l = 0; l < n; l++, k++)
+		{
+			ptr[k] = s2[l];
+		}
 	}
 
 	ptr[k] = '\0';
