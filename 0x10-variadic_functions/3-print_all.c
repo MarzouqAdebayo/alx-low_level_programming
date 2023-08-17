@@ -1,14 +1,6 @@
 #include "variadic_functions.h"
 
 /**
- * dummy - dummy function
- */
-
-void dummy(void)
-{
-}
-
-/**
  * check - check if format is valid
  * @c: character to be checked
  *
@@ -23,6 +15,28 @@ int check(char c)
 }
 
 /**
+ * length - returns the length of a valid format
+ * @format: string that contains format
+ *
+ * Return: the length of the format
+*/
+
+int length(const char *const format)
+{
+	int len, i;
+
+	i = 0;
+	len = 0;
+	while (format && format[i])
+	{
+		if (check(format[i]) == 1)
+			len++;
+		i++;
+	}
+	return (len);
+}
+
+/**
  * print_all - Prints all text passed into a function
  * @format: string containing the print format
  *
@@ -31,17 +45,9 @@ int check(char c)
 
 void print_all(const char *const format, ...)
 {
-	int len, i, sep = 0;
+	int len = length(format), i, sep = 0;
 	va_list args;
 
-	len = 0;
-	i = 0;
-	while (format[i])
-	{
-		if (check(format[i]) == 1)
-			len++;
-		i++;
-	}
 	va_start(args, format);
 	i = 0;
 	len++;
