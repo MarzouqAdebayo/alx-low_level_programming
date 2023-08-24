@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * listlen - Prints the length of a linked list
+ * list_len - Prints the length of a linked list
  * @h: pointer to the head of the linked list
  *
  * Return: lenght of the linked list
