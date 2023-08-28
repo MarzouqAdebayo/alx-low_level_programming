@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - prints all the elements of a linked list.
+ * print_listint - prints all the elements of a linked list.
  * @h: The linked list
  *
  * Return: The minber of nodes int the list
