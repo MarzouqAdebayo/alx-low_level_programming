@@ -10,24 +10,20 @@
 void print_binary(unsigned long int n)
 {
 	int num_bits, i;
+	unsigned long int mask;
 
 	if (n == 0)
 	{
 		printf("0");
 		return;
 	}
-
 	num_bits = sizeof(n) * 8;
-
 	for (i = num_bits - 1; i >= 0; i--)
 	{
-		unsigned long int mask = 1UL << i;
-		if (n & mask) {
+		mask = 1UL << i;
+		if (n & mask)
 			printf("1");
-		}
 		else
-		{
 			printf("0");
-		}
 	}
 }
