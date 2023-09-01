@@ -23,7 +23,8 @@ void print_binary(unsigned long int n)
 	for (i = num_bits - 1; i >= 0; i--)
 	{
 		mask = 1 << i;
-		if (n & mask) {
+		if (n & mask)
+		{
 			flag = 1;
 			printf("1");
 		}
