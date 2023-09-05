@@ -25,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		fclose(fp);
 		return (0);
 	}
-	bytesRead = read(fp, buffer, letters);
+	bytesRead = fread(buffer, 1, letters, fp);
 	if (bytesRead == -1)
 	{
 		free(buffer);
