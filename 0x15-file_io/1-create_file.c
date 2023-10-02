@@ -14,7 +14,7 @@ int create_file(const char *filename, char *text_content)
 	ssize_t bytesWritten;
 
 	if (filename == NULL)
-		return -1;
+		return (-1);
 
 	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
