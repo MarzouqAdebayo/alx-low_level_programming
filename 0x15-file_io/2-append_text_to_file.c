@@ -1,31 +1,31 @@
 #include "main.h"
 
 /**
- * create_file - creates a file
+ * append_text_to_file - appends text to file
  * @filename: name of the file
- * @text_content: content of the file
+ * @text_content: text to append to file
  *
- * Return: 1 if succesful and -1 if not
-*/
+ * Return: 1 if successful else -1
+ */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int file;
-	ssize_t bytesWritten;
+	ssize_t bytes_written;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
-	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	file = open(filename, O_WRONLY | O_APPEND);
 
 	if (file == -1)
 		return (-1);
 
 	if (text_content)
 	{
-		bytesWritten = write(file, text_content, strlen(text_content));
+		bytes_written = write(file, text_content, strlen(text_content));
 
-		if (bytesWritten == -1)
+		if (bytes_written == -1)
 		{
 			close(file);
 			return (-1);
