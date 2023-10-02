@@ -11,7 +11,8 @@ void dummy(void);
  */
 int main(int argc, char *argv[])
 {
-	int from_file, to_file, bytesRead = 1024, bytesWritten, close_from_file, close_to_file;
+	int from_file, to_file, bytesRead = 1024, bytesWritten,
+	close_from_file, close_to_file;
 	char buffer[1024];
 
 	if (argc != 3)
