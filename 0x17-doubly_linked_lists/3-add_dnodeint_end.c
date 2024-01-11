@@ -5,11 +5,12 @@
  * @head: pointer to the pointer to the head of the DLL
  * @n: the value of the new node
  *
- * @return: the new node
+ * Return: the new node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *current = *head, *new_node;
+
 	if (!head)
 		return (NULL);
 	new_node = malloc(sizeof(dlistint_t));

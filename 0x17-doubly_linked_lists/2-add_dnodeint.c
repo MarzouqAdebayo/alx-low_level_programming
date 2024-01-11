@@ -3,8 +3,9 @@
 /**
  * add_dnodeint - adds a new node to the DLL
  * @head: pointer to the pointer to the head of the DLL
+ * @n: value at node
  *
- * @return: the new node
+ * Return: the new node
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {

@@ -5,7 +5,7 @@
  * @head: pointer to the pointer to the head of the DLL
  * @index: index of the node to return
  *
- * @return: the node at index
+ * Return: the node at index
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
