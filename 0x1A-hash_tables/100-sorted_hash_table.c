@@ -163,13 +163,13 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * hash_table_get - a function that retrieves a value associated with a key
+ * shash_table_get - a function that retrieves a value associated with a key
  * @ht: hash table to look into
  * @key: key you are looking for
  *
  * Return: the value for the key or NULL
  */
-char *hash_table_get(const shash_table_t *ht, const char *key)
+char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	unsigned long int idx;
 	shash_node_t *ll_head;
