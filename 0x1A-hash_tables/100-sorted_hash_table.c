@@ -156,9 +156,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			return (0);
 		ht->array[idx] = new;
 	}
-
 	dlli(&(ht->shead), &(ht->stail), &new);
-
 	return (1);
 }
 
@@ -196,7 +194,12 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 void shash_table_print(const shash_table_t *ht)
 {
 	int comma_flag = 0;
-	shash_node_t *current = ht->shead;
+	shash_node_t *current;
+
+	if (!ht)
+		return;
+
+	current = ht->shead;
 
 	putchar('{');
 	while (current)
@@ -212,14 +215,19 @@ void shash_table_print(const shash_table_t *ht)
 }
 
 /**
- * shash_table_print - a function that prints a sorted linked list in
+ * shash_table_print_rev - a function that prints a sorted linked list in
  * reverse
  * @ht: the hash table
  */
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	int comma_flag = 0;
-	shash_node_t *current = ht->stail;
+	shash_node_t *current;
+
+	if (!ht)
+		return;
+
+	current = ht->stail;
 
 	putchar('{');
 	while (current)
