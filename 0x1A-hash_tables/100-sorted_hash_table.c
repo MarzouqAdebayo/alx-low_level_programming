@@ -77,17 +77,17 @@ void dlli(shash_node_t **h, shash_node_t **t, shash_node_t **new)
 }
 
 /**
- * alloc - allocates new node
+ * salloc - allocates new node
  * @key: key
  * @value: value
  *
  * Return: new node or NULL
  */
-hash_node_t *alloc(const char *key, const char *value)
+shash_node_t *salloc(const char *key, const char *value)
 {
-	hash_node_t *new;
+	shash_node_t *new;
 
-	new = malloc(sizeof(hash_node_t));
+	new = malloc(sizeof(shash_node_t));
 	if (!new)
 		return (NULL);
 	new->key = strdup(key);
@@ -119,7 +119,7 @@ hash_node_t *alloc(const char *key, const char *value)
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
-	hash_node_t *new, *current;
+	shash_node_t *new, *current;
 	char *temp;
 
 	if (!ht || !key || strlen(key) == 0 || !value)
@@ -142,7 +142,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			else
 				current = current->next;
 		}
-		new = alloc(key, value);
+		new = salloc(key, value);
 		if (!new)
 			return (0);
 		current = ht->array[idx];
@@ -151,12 +151,14 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		new = alloc(key, value);
+		new = salloc(key, value);
 		if (!new)
 			return (0);
 		ht->array[idx] = new;
 	}
+
 	dlli(&(ht->shead), &(ht->stail), &new);
+
 	return (1);
 }
 
@@ -211,7 +213,7 @@ void shash_table_print_rev(const shash_table_t *ht)
  */
 void shash_table_delete(shash_table_t *ht)
 {
-	hash_node_t *current, *holder;
+	shash_node_t *current, *holder;
 	unsigned long int i;
 
 	if (ht && ht->array)
