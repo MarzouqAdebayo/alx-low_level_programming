@@ -1,0 +1,7 @@
+.PHONY: school
+
+CC = gcc
+SRC = *.c
+
+school:
+	${CC} ${SRC} -o $@
