@@ -9,29 +9,31 @@
  *
  * Return: The index of the value if found, -1 otherwise
  */
-int binary_search(int *array, size_t size, int value)
+int binary_search(int* array, size_t size, int value)
 {
-	int mid = (size - 1) / 2, left = 0, right = size - 1, i;
+  int mid, lo, high, i;
 
-	if (!array)
-		return (-1);
-	while (left <= right)
-	{
+  if (!array)
+      return (-1);
+  lo = 0;
+  high = size - 1;
+  while (lo < high)
+  {
 		printf("Searching in array: ");
-		for (i = left; i <= right; i++)
+		for (i = lo; i <= high; i++)
 		{
 			printf("%d", array[i]);
-			if (i < right)
+			if (i < high)
 				printf(", ");
 		}
 		putchar('\n');
-		if (array[mid] == value)
-			return (mid);
-		else if (array[mid] < value)
-			left = mid + 1;
-		else
-			right = mid - 1;
-		mid = left + ((right - left) / 2);
-	}
-	return (-1);
+    mid = lo + (high - lo) / 2;
+    if (array[mid] == value)
+      return (mid);
+    else if (array[mid] < value)
+      lo = mid + 1;
+    else
+      high = mid -  1;
+  }
+  return (-1);
 }
